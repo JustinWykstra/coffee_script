@@ -2,5 +2,8 @@ some_function = ->
   console.log("I'm in another function")
 
 $ ->
-  $('#myButton')
-    $('container').toggle()
+  $('#myButton').click ->
+    $.ajax
+      type: 'POST'
+      url: '/guides'
+      data: "guide[title]=Hey from coffeescript"
