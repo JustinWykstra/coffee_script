@@ -3,5 +3,4 @@ some_function = ->
 
 $ ->
   $('#myButton')
-  console.log("Hey there")
-  some_function()
+    $('container').toggle()
